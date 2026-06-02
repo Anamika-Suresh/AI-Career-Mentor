@@ -173,16 +173,29 @@ st.session_state.selected_role = target_role
 # Divider
 st.sidebar.markdown("---")
 
-# RAG Instantiation & Status check
+# RAG Instantiation & Status check (Cached in Session State)
 rag = None
 if api_key:
-    try:
-        # Cache or instantiate RAG
-        rag = CareerMentorRAG(llm_provider, api_key)
+    # Initialize only if provider or key changes, or if not yet initialized
+    if (
+        "rag" not in st.session_state 
+        or st.session_state.get("rag_provider") != llm_provider 
+        or st.session_state.get("rag_key") != api_key
+    ):
+        try:
+            st.session_state.rag = CareerMentorRAG(llm_provider, api_key)
+            st.session_state.rag_provider = llm_provider
+            st.session_state.rag_key = api_key
+        except Exception as e:
+            st.session_state.rag = None
+            st.session_state.rag_provider = None
+            st.session_state.rag_key = None
+            st.sidebar.markdown("<div class='status-warn'>⚠️ Connection Failed</div>", unsafe_allow_html=True)
+            st.sidebar.caption(f"Error: {e}")
+    
+    rag = st.session_state.get("rag", None)
+    if rag:
         st.sidebar.markdown(f"<div class='status-ok'>✓ RAG Connected ({llm_provider})</div>", unsafe_allow_html=True)
-    except Exception as e:
-        st.sidebar.markdown(f"<div class='status-warn'>⚠️ Connection Failed</div>", unsafe_allow_html=True)
-        st.sidebar.caption(f"Error: {e}")
 else:
     st.sidebar.markdown("<div class='status-warn'>⚠️ API Key Required</div>", unsafe_allow_html=True)
     st.sidebar.caption("Please input an API Key above or define it in a `.env` file to start.")
@@ -255,7 +268,39 @@ with tab_chat:
         doc_count = len(indexed_files)
         
     if doc_count == 0:
-        st.warning("⚠️ The knowledge base is currently empty! Click on the **'Document Manager'** tab to upload resumes, interview sheets, or load the pre-made sample documents to get full RAG-driven answers.")
+        st.warning("⚠️ The knowledge base is currently empty! Upload resumes/guides in the **'Document Manager'** tab, or click the button below to instantly load our pre-made career sample documents.")
+        if rag:
+            if st.button("🚀 Load Pre-made Career Samples Now", key="chat_load_samples_button", use_container_width=True):
+                with st.spinner("Loading and indexing pre-made career samples..."):
+                    samples = [
+                        ("data_analyst_jd.txt", "Job Description"),
+                        ("data_scientist_jd.txt", "Job Description"),
+                        ("ml_engineer_jd.txt", "Job Description"),
+                        ("ai_engineer_jd.txt", "Job Description"),
+                        ("data_roles_experience.txt", "Interview Prep/Experience"),
+                        ("resume_tips_general.txt", "Resume/Tips")
+                    ]
+                    sample_dir = "sample_documents"
+                    success_count = 0
+                    for filename, cat in samples:
+                        path = os.path.join(sample_dir, filename)
+                        if os.path.exists(path):
+                            with open(path, "rb") as f:
+                                content = f.read()
+                            try:
+                                success = rag.add_document(
+                                    file_content=content,
+                                    filename=filename,
+                                    file_type="text/plain",
+                                    category=cat
+                                )
+                                if success:
+                                    success_count += 1
+                            except Exception as e:
+                                st.error(f"Error loading sample {filename}: {e}")
+                    if success_count > 0:
+                        st.success(f"Indexed {success_count} pre-made career documents!")
+                        st.rerun()
     else:
         st.info(f"📚 RAG Knowledge Base active with **{doc_count}** indexed document(s). Direct citations will be generated.")
         
