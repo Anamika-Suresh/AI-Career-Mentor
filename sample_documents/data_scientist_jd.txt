@@ -1,0 +1,24 @@
+JOB TITLE: Data Scientist
+DEPARTMENT: Advanced Analytics & AI
+LOCATION: San Francisco, CA (Hybrid)
+
+POSITION SUMMARY:
+We are looking for a Data Scientist to join our Advanced Analytics team. You will leverage statistical modeling, machine learning, and predictive analytics to solve complex business problems. The ideal candidate has a passion for diving deep into data, testing hypotheses, training predictive models, and running A/B tests to improve user retention, product personalization, and growth.
+
+KEY RESPONSIBILITIES:
+- Formulate business problems as mathematical and machine learning problems.
+- Design, train, and evaluate machine learning models (Supervised/Unsupervised) such as random forests, gradient boosting, and clustering models using Scikit-Learn, LightGBM, or XGBoost.
+- Set up, execute, and analyze rigorous A/B tests to measure the impact of new features, pricing changes, or recommendations.
+- Apply advanced statistical methods including regression analysis, hypothesis testing, ANOVA, and causal inference.
+- Write robust, clean, and reusable Python code for data processing and model training pipelines.
+- Collaborate with ML engineers to deploy models into production environments.
+- Present data insights, modeling choices, and experiments to executive leadership.
+
+QUALIFICATIONS & SKILLS:
+- Master's or PhD degree in Statistics, Data Science, Machine Learning, Computer Science, or a highly quantitative field (or Bachelor's with 2+ years of relevant experience).
+- Deep theoretical and practical understanding of statistics (probability distributions, hypothesis testing, confidence intervals, experimental design).
+- Proficiency in Python programming, specifically with packages like Pandas, NumPy, Scipy, Scikit-Learn, Statsmodels, and plotting tools (Seaborn/Plotly).
+- Strong SQL skills for querying large databases and setting up ETL pipelines.
+- Familiarity with big data tools (PySpark, Hive, Snowflake) is a plus.
+- Basic understanding of machine learning model lifecycle and versioning (Git, MLflow).
+- Strong communication and visual storytelling capabilities.

@@ -1,0 +1,25 @@
+JOB TITLE: AI Engineer (Generative AI)
+DEPARTMENT: Cognitive Systems & Products
+LOCATION: New York, NY (Hybrid)
+
+POSITION SUMMARY:
+We are looking for an AI Engineer specializing in Generative AI and Large Language Models (LLMs) to build intelligent user experiences. You will design, build, and optimize applications utilizing advanced LLMs, Retrieval-Augmented Generation (RAG), and agentic workflows. You will collaborate with product teams to embed smart capabilities like conversational agents, automated content generators, and smart search engines into our core products.
+
+KEY RESPONSIBILITIES:
+- Design and implement state-of-the-art Retrieval-Augmented Generation (RAG) pipelines using frameworks like LangChain, LlamaIndex, or Haystack.
+- Connect applications with vector databases (ChromaDB, Pinecone, Qdrant, Milvus) and optimize indexing, chunking strategies, and retrieval performance (e.g., hybrid search, rerankers).
+- Integrate state-of-the-art LLMs (Gemini, OpenAI, Claude, Llama) using REST APIs or local deployment frameworks.
+- Write robust prompts, manage prompt engineering lifecycles, and explore structured output generation techniques.
+- Evaluate LLM applications for safety, hallucinations, faithfulness, and answer relevance using frameworks like Ragas, TruLens, or custom LLM-as-a-judge evaluators.
+- Fine-tune open-source models (using LoRA, QLoRA) on custom datasets when necessary.
+- Build multi-agent collaboration workflows using frameworks like LangGraph, CrewAI, or Autogen.
+
+QUALIFICATIONS & SKILLS:
+- Bachelor's or Master's degree in Computer Science, Artificial Intelligence, or a related field.
+- Excellent programming skills in Python or TypeScript.
+- Hands-on experience building, testing, and deploying RAG pipelines or AI-powered web applications.
+- Experience with vector databases and embedding models (OpenAI, Hugging Face, Cohere).
+- Proficient in prompt engineering, prompt template management, and chains.
+- Familiarity with software design principles, API integrations, and cloud hosting.
+- Experience with building user interfaces for AI products (Streamlit, Gradio, Chainlit, or React) is highly preferred.
+- Curiosity to keep up with the daily advancements in generative AI, research papers, and libraries.

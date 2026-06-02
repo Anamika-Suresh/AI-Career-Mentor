@@ -1,0 +1,64 @@
+# INTERVIEW EXPERIENCES COMPILATION: DATA & AI ROLES
+
+## Role: Data Analyst
+### Company: Global Tech Solutions
+#### Interview Rounds:
+1. **Resume Screening & Technical Quiz (Online)**:
+   - 20 multiple choice questions on SQL queries, Excel functions (VLOOKUP, INDEX-MATCH), and basic probability.
+2. **Technical Interview (SQL & Excel focus)**:
+   - Live coding round. The interviewer gave a schema with tables: `Users(user_id, join_date, country)` and `Transactions(tx_id, user_id, tx_date, amount)`.
+   - Task 1: Find the top 3 users by total transaction amount in each country. I solved it using CTEs and `DENSE_RANK() OVER (PARTITION BY country ORDER BY total_amount DESC)`.
+   - Task 2: Calculate month-over-month user retention.
+   - Excel Task: Explain how to identify duplicates and handle missing values in Excel.
+3. **Behavioral & Case Study Interview**:
+   - Case study: "A product dashboard shows a 10% drop in daily active users (DAU). How would you investigate this?"
+   - My Answer: Break it down by dimension (platform, region, version, channel). Check if the drop is sudden (server error/app crash) or gradual (seasonal change/competitor launch). Check data logging pipeline first to verify if it's a reporting bug.
+   - Behavioral questions: "Describe a time you had to explain a complex analysis to a non-technical stakeholder."
+
+---
+
+## Role: Data Scientist
+### Company: Tech Giants Corp
+#### Interview Rounds:
+1. **Technical Screening (Python & Stats)**:
+   - Coding: Reverse a linked list, and write a function to compute the median of a stream of numbers.
+   - Stats questions: Explain the difference between Type I and Type II errors, and describe the Central Limit Theorem.
+2. **Machine Learning & Modeling Round**:
+   - Scenario: "Design a model to predict user churn for a subscription service."
+   - Discussion: What features would you select? (Usage frequency, payment history, customer support interactions). Which algorithm would you use and why? (XGBoost for high tabular data performance, baseline with Logistic Regression for explainability).
+   - Metrics: Why is ROC-AUC or F1-score better than Accuracy here? (Because churn is usually a highly imbalanced dataset).
+3. **Experimental Design & A/B Testing Round**:
+   - Scenario: "We want to test a new recommendation algorithm for the home page. How would you design the A/B test?"
+   - Discussion: Setting up hypothesis (H0: no difference in CTR, H1: CTR improves), calculating sample size (using power analysis: alpha=0.05, power=0.8, minimum detectable effect), determining test duration (typically 2 weeks to cover weekly cycles), and checking for network effects (user interference).
+
+---
+
+## Role: Machine Learning (ML) Engineer
+### Company: ScaleAI Systems
+#### Interview Rounds:
+1. **Software Engineering & Data Structures (LeetCode Medium-Hard)**:
+   - Task 1: Implement an LRU Cache.
+   - Task 2: Find the shortest path in a grid with obstacles (solved using BFS/Dijkstra).
+2. **ML System Design Round**:
+   - Scenario: "Design a real-time recommendation system for an e-commerce platform with millions of products and users."
+   - Components to mention: Two-stage retrieval system (Candidate Generation using approximate nearest neighbors like HNSW, and Ranking/Scoring using a deep learning click-through rate prediction model).
+   - Production challenges: Feature store for low-latency feature fetching, caching of user embeddings, online inference serving via Triton or TF Serving, batch vs streaming updates.
+3. **MLOps & Infrastructure Coding**:
+   - Write a Dockerfile to containerize a FastAPI service serving a PyTorch model.
+   - Discuss how to optimize PyTorch inference latency: weight quantization (FP32 to INT8), model compilation (TorchScript/TensorRT), and asynchronous request batching.
+
+---
+
+## Role: AI Engineer (Generative AI)
+### Company: IntelliCorp
+#### Interview Rounds:
+1. **Generative AI Concepts & Python Coding**:
+   - Coding: Implement a custom text splitter that doesn't split sentences in half.
+   - Concepts: Explain how RAG works, what dense retrieval is, and the difference between Cosine Similarity and Dot Product.
+   - Discuss prompt engineering strategies: Few-shot prompting, Chain of Thought (CoT), ReAct, and XML tagging for model steering.
+2. **RAG Architecture Design Round**:
+   - Scenario: "Design a RAG system for a company's internal HR knowledge base consisting of thousands of PDFs, Word files, and slide decks."
+   - Topics: Document ingestion pipeline (using OCR/parsers, metadata enrichment for filtering), chunking strategies (parent-child retrieval, sentence window retrieval), vector database indexing, query rewriting, reranking (using Cohere Rerank or BGE-Rerank), and evaluation (using metrics like Faithfulness and Answer Relevance).
+3. **LLM Evaluation & Fine-Tuning Discussion**:
+   - Discussion: How do you evaluate a chatbot? (Setting up golden test sets, utilizing LLM-as-a-judge frameworks).
+   - In what scenario would you fine-tune a model vs using RAG? (Fine-tuning is for teaching a model a new style, format, tone, or specific domain terminology; RAG is for giving the model access to dynamic, factual, external information).

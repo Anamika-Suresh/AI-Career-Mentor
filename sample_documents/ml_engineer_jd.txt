@@ -1,0 +1,25 @@
+JOB TITLE: Machine Learning (ML) Engineer
+DEPARTMENT: Core AI Platform
+LOCATION: Seattle, WA (Hybrid)
+
+POSITION SUMMARY:
+We are seeking a Machine Learning Engineer to build and maintain the infrastructure that powers our AI models. In this role, you will bridge the gap between Data Science and Software Engineering by scaling machine learning pipelines, packaging models into microservices, and deploying them to production. You will focus on performance, scalability, latency, and system reliability.
+
+KEY RESPONSIBILITIES:
+- Design, implement, and automate end-to-end Machine Learning pipelines (ETL, Feature Engineering, Model Training, Evaluation, and Deployment) using tools like Airflow or Kubeflow.
+- Wrap machine learning models in high-performance APIs using FastAPI, Flask, or gRPC.
+- Containerize models and pipeline applications using Docker and deploy them on Kubernetes (EKS/GKE) or AWS SageMaker.
+- Optimize ML model inference for low latency and high throughput (quantization, compilation with TensorRT/ONNX, batching).
+- Implement ML monitoring systems to detect feature drift, model decay, and system performance issues (Prometheus, Grafana, Evidently AI).
+- Manage model versioning, lineage, and metadata using model registries (MLflow, weights & biases).
+- Collaborate with Data Scientists to refactor experimental notebook code into production-grade Python packages.
+
+QUALIFICATIONS & SKILLS:
+- Bachelor's or Master's degree in Computer Science, Software Engineering, or related field.
+- Strong software engineering foundations: object-oriented programming (OOP), data structures, algorithms, and design patterns.
+- Excellent Python programming skills, including writing unit tests (pytest) and adhering to PEP 8 standards.
+- Hand-on experience with containerization (Docker) and cloud services (AWS, GCP, or Azure).
+- Familiarity with ML libraries: PyTorch, TensorFlow, Scikit-Learn, and Hugging Face.
+- Solid understanding of SQL/NoSQL databases and database modeling.
+- Experience with Git, CI/CD pipelines (GitHub Actions, GitLab CI), and Linux/Bash scripting.
+- Understanding of MLOps concepts (model registry, feature store, CI/CD for ML).

@@ -1,0 +1,24 @@
+JOB TITLE: Data Analyst
+DEPARTMENT: Business Intelligence
+LOCATION: Remote / Hybrid
+
+POSITION SUMMARY:
+We are seeking a detail-oriented and analytical Data Analyst to join our Business Intelligence team. In this role, you will be responsible for collecting, cleaning, analyzing, and interpreting complex datasets to help drive strategic business decisions. You will work closely with cross-functional teams to design interactive dashboards, write SQL queries, and generate actionable insights.
+
+KEY RESPONSIBILITIES:
+- Extract, clean, and transform data from multiple databases using SQL and Python/R.
+- Design, build, and maintain interactive business intelligence dashboards and reports using Tableau, Power BI, or Looker.
+- Perform exploratory data analysis (EDA) to identify trends, patterns, and anomalies in user behavior and business metrics.
+- Translate business requirements into technical data specifications and KPIs.
+- Collaborate with product, marketing, and finance teams to design experiments (like A/B testing support) and track post-launch performance.
+- Communicate data findings and technical insights to non-technical stakeholders through clear visualizations and reports.
+
+QUALIFICATIONS & SKILLS:
+- Bachelor's degree in Mathematics, Statistics, Computer Science, Economics, Information Systems, or a related field.
+- 0-2 years of experience in data analysis, business intelligence, or a related analytical role (fresh graduates with project experience are welcome).
+- Strong proficiency in SQL (writing complex JOINs, CTEs, window functions, and query optimization).
+- Hands-on experience with Python (Pandas, NumPy, Matplotlib, Seaborn) or R for data analysis.
+- Experience building dashboards in Power BI or Tableau.
+- Solid understanding of basic statistical concepts (mean, median, standard deviation, correlation, hypothesis testing).
+- Strong written and verbal communication skills.
+- Familiarity with Excel (Pivot tables, VLOOKUP, advanced formulas) is required.

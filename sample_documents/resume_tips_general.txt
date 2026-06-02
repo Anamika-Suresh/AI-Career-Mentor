@@ -1,0 +1,45 @@
+# RESUME WRITING GUIDE: TECH & AI ROLES
+
+A resume for technical and analytical roles must be clean, structured, and focused on impact rather than just listing responsibilities. Below are actionable guidelines to optimize your resume for both human reviewers and Applicant Tracking Systems (ATS).
+
+---
+
+## 1. Resume Formatting Guidelines
+- **Length**: Keep it to exactly 1 page if you have less than 5 years of experience.
+- **Layout**: Simple single-column layout. Avoid complex multi-column tables, visual icons, or progress bars for skills (ATS can struggle to parse these correctly).
+- **Fonts**: Use standard professional fonts (Arial, Calibri, Helvetica, Times New Roman) in 10-12pt size.
+- **File Type**: Save as PDF unless the application portal explicitly requests a Word (.docx) document.
+
+---
+
+## 2. Structure of the Resume
+The recommended order of sections for a fresh graduate or early career professional is:
+1. **Header**: Name, contact details, email, GitHub link, LinkedIn link. (No physical address needed, just City, State).
+2. **Education**: University name, degree, graduation year, major, GPA (include only if it is above 3.5/4.0 or equivalent).
+3. **Technical Skills**: Grouped logically:
+   - *Languages*: Python, SQL, Java, C++
+   - *Frameworks & Libraries*: Pandas, NumPy, Scikit-Learn, PyTorch, LangChain, Streamlit
+   - *Databases & Vector Databases*: PostgreSQL, MongoDB, ChromaDB, Pinecone
+   - *Tools & Platforms*: Git, Docker, AWS, Google Cloud, Tableau, Power BI
+4. **Professional Experience**: Internships, freelance work, or relevant part-time roles.
+5. **Projects**: Bullet points of 3-4 personal or academic projects that show hands-on experience.
+6. **Certifications & Achievements**: Relevant online courses (Coursera, Udemy) or hackathon wins.
+
+---
+
+## 3. Writing Impactful Bullet Points (The STAR Method)
+For every project or experience bullet point, do not write simple descriptions like:
+* "Responsible for cleaning data and training machine learning models." (Weak, passive)
+
+Instead, use the **STAR** method: **S**ituation, **T**ask, **A**ction, **R**esult. Integrate metrics and numbers to quantify your impact:
+* "Designed and deployed a predictive customer churn model using XGBoost in Python, reducing churn by 12% and saving an estimated $15,000 annually. Built an interactive Streamlit dashboard for stakeholders to explore user risk scores." (Strong, action-oriented, metrics-driven)
+
+### Formula:
+`[Action Verb] + [What you did/What tools you used] + [Why you did it / What result you achieved (with metrics)]`
+
+---
+
+## 4. ATS (Applicant Tracking System) Optimization
+- **Keyword Matching**: Tailor your resume for every job application! Read the Job Description carefully and weave the exact keywords (e.g., "A/B testing", "FastAPI", "vector search") naturally into your skills and project sections.
+- **Avoid Text-in-Images**: Never put your contact information or skills inside an image, header, or footer. Many ATS parsers ignore these sections completely.
+- **Spell Out Acronyms**: Write "Large Language Models (LLMs)" or "Natural Language Processing (NLP)" at least once so the parser matches either search query.
