@@ -13,8 +13,8 @@ class TestCareerMentorRAG(unittest.TestCase):
         mentor = CareerMentorRAG("Google Gemini", "fake_gemini_key")
         self.assertEqual(mentor.provider, "Google Gemini")
         self.assertEqual(mentor.api_key, "fake_gemini_key")
-        mock_embeddings.assert_called_once_with(model="models/embedding-001", google_api_key="fake_gemini_key")
-        mock_llm.assert_called_once_with(model="gemini-1.5-flash", temperature=0.3, google_api_key="fake_gemini_key")
+        mock_embeddings.assert_called_once_with(model="models/gemini-embedding-001", google_api_key="fake_gemini_key")
+        mock_llm.assert_called_once_with(model="gemini-2.5-flash", temperature=0.3, google_api_key="fake_gemini_key")
         mock_chroma.assert_called_once()
 
     @patch('rag_backend.OpenAIEmbeddings')

@@ -62,11 +62,11 @@ class CareerMentorRAG:
         if provider == "Google Gemini":
             self.db_dir = os.path.join("chroma_db", "gemini")
             self.embeddings = GoogleGenerativeAIEmbeddings(
-                model="models/embedding-001",
+                model="models/gemini-embedding-001",
                 google_api_key=self.api_key
             )
             self.llm = ChatGoogleGenerativeAI(
-                model="gemini-1.5-flash",
+                model="gemini-2.5-flash",
                 temperature=0.3,
                 google_api_key=self.api_key
             )
