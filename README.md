@@ -1,6 +1,10 @@
 # 🎓 Personal Career Mentor RAG Platform
 
-A beginner-friendly **Retrieval-Augmented Generation (RAG)** application designed to help fresh graduates and job seekers prepare for interviews, optimize resumes, and analyze hiring patterns. 
+A beginner-friendly **Retrieval-Augmented Generation (RAG)** application designed to help fresh graduates and job seekers prepare for interviews, optimize resumes, and analyze hiring patterns.
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-career-mentor-5vsbprjw8pfaj9r4ubc52q.streamlit.app/)
+
+👉 **Live Demo**: [ai-career-mentor-5vsbprjw8pfaj9r4ubc52q.streamlit.app](https://ai-career-mentor-5vsbprjw8pfaj9r4ubc52q.streamlit.app/)
 
 It provides customized, role-specific guidance for:
 * **Data Analyst**
