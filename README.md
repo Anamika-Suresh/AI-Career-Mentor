@@ -1,10 +1,10 @@
-# 🎓 Personal Career Mentor RAG Platform
+#  Personal Career Mentor RAG Platform
 
 A beginner-friendly **Retrieval-Augmented Generation (RAG)** application designed to help fresh graduates and job seekers prepare for interviews, optimize resumes, and analyze hiring patterns.
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-career-mentor-5vsbprjw8pfaj9r4ubc52q.streamlit.app/)
 
-👉 **Live Demo**: [ai-career-mentor-5vsbprjw8pfaj9r4ubc52q.streamlit.app](https://ai-career-mentor-5vsbprjw8pfaj9r4ubc52q.streamlit.app/)
+ **Live Demo**: [ai-career-mentor-5vsbprjw8pfaj9r4ubc52q.streamlit.app](https://ai-career-mentor-5vsbprjw8pfaj9r4ubc52q.streamlit.app/)
 
 It provides customized, role-specific guidance for:
 * **Data Analyst**
@@ -16,7 +16,7 @@ You can upload your own job descriptions, resume tips, and interview sheets, or 
 
 ---
 
-## 🛠️ How It Works (RAG Architecture)
+## How It Works (RAG Architecture)
 
 The system works by breaking down documents, saving them as mathematical vectors, finding matching content for your question, and using an LLM to write a custom answer with source citations:
 
@@ -45,7 +45,7 @@ Output: Answer + File Sources
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 * **`app.py`**: The Streamlit user interface. It renders the chat box, document upload tab, sidebar settings, and sample loader.
 * **`rag_backend.py`**: The core RAG operations. Handles reading files, splitting text into chunks, embedding vectors, querying Chroma DB, and executing LLM chains.
@@ -55,7 +55,7 @@ Output: Answer + File Sources
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 Follow these step-by-step instructions to run the application on your computer:
 
@@ -106,7 +106,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📈 Running the Application
+##  Running the Application
 
 Start the Streamlit development server:
 ```bash
