@@ -43,15 +43,15 @@ User Question + Target Role
 Output: Answer + File Sources
 ---
 
-## 📊 Retrieval Accuracy & Evaluation
+## Retrieval Accuracy & Evaluation
 
 The retrieval pipeline has been empirically evaluated across **12 test queries** spanning all target roles and document categories.
 
-### Metrics Summary
+## Metrics Summary
 
-* **Context Precision**: **`85.4%`** (41 / 48 retrieved chunks manually verified as directly relevant)
+* **Context Precision**: **85.4%`** (41 / 48 retrieved chunks manually verified as directly relevant)
 * **Hit Rate @ k=4**: **`100.0%`** (12 / 12 queries retrieved a relevant chunk at Rank #1)
-* **Average Retrieval Latency**: **`~150ms`**
+* **Average Retrieval Latency**: **~150ms**
 * **Average End-to-End Latency**: **`~1.2s`**
 
 ### Calculation Methodology
@@ -76,7 +76,7 @@ $$\text{Context Precision} = \frac{\text{Total Relevant Retrieved Chunks}}{\text
 
 ---
 
-##  Setup Instructions
+## Setup Instructions
 
 Follow these step-by-step instructions to run the application on your computer:
 
