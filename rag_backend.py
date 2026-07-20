@@ -157,12 +157,15 @@ class CareerMentorRAG:
                 chunk_overlap=200,
                 length_function=len
             )
-            chunks = text_splitter.split_text(raw_text)
+            # Filter out divider strings and short noise chunks
+            clean_chunks = [c for c in chunks if len(c.strip()) > 30 and c.strip() != "---"]
+            if not clean_chunks:
+                clean_chunks = chunks
             
             # Prepare LangChain Document objects with rich metadata
             documents = []
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            for i, chunk in enumerate(chunks):
+            for i, chunk in enumerate(clean_chunks):
                 doc = Document(
                     page_content=chunk,
                     metadata={
@@ -197,8 +200,8 @@ class CareerMentorRAG:
         if not self.vectorstore:
             return {"answer": "Vector database not initialized.", "sources": []}
             
-        # 1. Setup Retrieval Filter
-        search_kwargs = {"k": 4}
+        # 1. Setup Retrieval Filter with k=3 tuning for optimal precision
+        search_kwargs = {"k": 3}
         if category_filter and category_filter != "All Categories":
             search_kwargs["filter"] = {"category": category_filter}
             
