@@ -41,7 +41,6 @@ User Question + Target Role
 [ LLM (Gemini or OpenAI) ] (Reads retrieved chunks + generates answer)
        ↓
 Output: Answer + File Sources
----
 
 ## Retrieval Accuracy & Evaluation
 
@@ -123,9 +122,6 @@ pip install -r requirements.txt
    GEMINI_API_KEY=your_actual_gemini_api_key_here
    OPENAI_API_KEY=your_actual_openai_api_key_here
    ```
-*(Note: If you don't set a `.env` file, you can type your API Key directly into the Streamlit sidebar when the app starts!)*
-
----
 
 ##  Running the Application
 
