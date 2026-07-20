@@ -12,60 +12,63 @@ It provides customized, role-specific guidance for:
 * **Machine Learning (ML) Engineer**
 * **AI Engineer (Generative AI)**
 
-You can upload your own job descriptions, resume tips, and interview sheets, or load the pre-made sample data included with this project!
-
----
-
 ## How It Works (RAG Architecture)
 
 The system works by breaking down documents, saving them as mathematical vectors, finding matching content for your question, and using an LLM to write a custom answer with source citations:
 
+```
 Documents
 (Job Descriptions, Resumes, etc.)
-       │
-       ▼
-┌─────────────────────┐
-│  Document Loader     │  Reads TXT, PDF, Word files
-└─────────────────────┘
-       │
-       ▼
-┌─────────────────────┐
-│  Text Chunking        │  Splits text into 1,000-character
-└─────────────────────┘  pieces with overlap
-       │
-       ▼
-┌─────────────────────┐
-│  Embeddings Model     │  Converts text chunks into
-└─────────────────────┘  mathematical vectors
-       │
-       ▼
-┌─────────────────────┐
-│  ChromaDB              │  Saves vectors locally on disk
-│  (Vector Store)       │  (Vector Store)
-└─────────────────────┘
+       |
+       v
++----------------------+
+|  Document Loader      |  Reads TXT, PDF, Word files
++----------------------+
+       |
+       v
++----------------------+
+|  Text Chunking         |  Splits text into 1,000-character
++----------------------+  pieces with overlap
+       |
+       v
++----------------------+
+|  Embeddings Model      |  Converts text chunks into
++----------------------+  mathematical vectors
+       |
+       v
++----------------------+
+|  ChromaDB               |  Saves vectors locally on disk
+|  (Vector Store)        |
++----------------------+
 
-                User Question + Target Role
-                          │
-                          ▼
-              ┌─────────────────────┐
-              │  Vector Query          │  Finds top-4 most relevant
-              │  Retriever              │  text chunks
-              └─────────────────────┘
-                          │
-                          ▼
-              ┌─────────────────────┐
-              │  Role-Customized        │  Instructs the LLM to act
-              │  Prompt                  │  as a specific mentor persona
-              └─────────────────────┘
-                          │
-                          ▼
-              ┌─────────────────────┐
-              │  LLM                      │  Reads retrieved chunks +
-              │  (Gemini or OpenAI)   │  generates answer
-              └─────────────────────┘
-                          │
-                          ▼
-                Output: Answer + File Sources
+           User Question + Target Role
+                     |
+                     v
+        +----------------------+
+        |  Vector Query           |  Finds top-4 most relevant
+        |  Retriever               |  text chunks
+        +----------------------+
+                     |
+                     v
+        +----------------------+
+        |  Role-Customized         |  Instructs the LLM to act
+        |  Prompt                   |  as a specific mentor persona
+        +----------------------+
+                     |
+                     v
+        +----------------------+
+        |  LLM                       |  Reads retrieved chunks +
+        |  (Gemini or OpenAI)    |  generates answer
+        +----------------------+
+                     |
+                     v
+           Output: Answer + File Sources
+```
+
+
+
+              
+               
 
 ## Retrieval Accuracy & Evaluation
 
