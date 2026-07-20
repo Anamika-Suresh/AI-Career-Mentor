@@ -21,7 +21,6 @@ You can upload your own job descriptions, resume tips, and interview sheets, or 
 The system works by breaking down documents, saving them as mathematical vectors, finding matching content for your question, and using an LLM to write a custom answer with source citations:
 
 ---
-
 Documents
 (Job Descriptions, Resumes, etc.)
        ↓
@@ -42,7 +41,6 @@ User Question + Target Role
 [ LLM (Gemini or OpenAI) ] (Reads retrieved chunks + generates answer)
        ↓
 Output: Answer + File Sources
----
 ---
 
 ## Retrieval Accuracy & Evaluation
