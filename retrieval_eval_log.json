@@ -1,0 +1,457 @@
+{
+  "summary_metrics": {
+    "total_queries_tested": 12,
+    "top_k": 4,
+    "total_chunks_retrieved": 48,
+    "total_relevant_chunks": 41,
+    "empirical_context_precision": 0.8542,
+    "formatted_precision_percentage": "85.4%",
+    "hit_rate_at_4": 1.0
+  },
+  "detailed_evaluation": [
+    {
+      "query_id": 1,
+      "query": "What SQL skills and query optimization techniques are required for a Data Analyst?",
+      "target_role": "Data Analyst",
+      "category_filter": "All Categories",
+      "context_precision_query": 1.0,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "data_analyst_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "QUALIFICATIONS & SKILLS:\n- Strong proficiency in SQL (writing complex JOINs, CTEs, window functions, and query optimization)."
+        },
+        {
+          "rank": 2,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Technical Interview (SQL focus): Task 1: Find top 3 users by transaction amount using CTEs and DENSE_RANK()."
+        },
+        {
+          "rank": 3,
+          "source": "data_analyst_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "KEY RESPONSIBILITIES:\n- Extract, clean, and transform data from multiple databases using SQL and Python/R."
+        },
+        {
+          "rank": 4,
+          "source": "data_analyst_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "POSITION SUMMARY:\n- Write SQL queries, design interactive dashboards, and generate actionable insights."
+        }
+      ]
+    },
+    {
+      "query_id": 2,
+      "query": "How do I format my resume to optimize for ATS (Applicant Tracking Systems)?",
+      "target_role": "Data Analyst",
+      "category_filter": "Resume/Tips",
+      "context_precision_query": 1.0,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 1. Resume Formatting Guidelines\n- Length: 1 page\n- Layout: Simple single-column layout. Avoid tables/icons."
+        },
+        {
+          "rank": 2,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 4. ATS Optimization\n- Keyword Matching: Tailor resume for job description.\n- Avoid Text-in-Images."
+        },
+        {
+          "rank": 3,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 2. Structure of the Resume\n1. Header 2. Education 3. Technical Skills 4. Experience 5. Projects."
+        },
+        {
+          "rank": 4,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 3. Writing Impactful Bullet Points (The STAR Method)\n- Action Verb + What you did + Result with metrics."
+        }
+      ]
+    },
+    {
+      "query_id": 3,
+      "query": "What questions are asked in a Data Scientist A/B testing and experimental design interview?",
+      "target_role": "Data Scientist",
+      "category_filter": "Interview Prep/Experience",
+      "context_precision_query": 0.75,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "3. Experimental Design & A/B Testing Round: Setting up hypothesis H0/H1, calculating sample size, test duration."
+        },
+        {
+          "rank": 2,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Data Scientist Interview: Technical Screening (Python & Stats - Type I/II errors, Central Limit Theorem)."
+        },
+        {
+          "rank": 3,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Machine Learning & Modeling Round: Predict user churn, feature selection, XGBoost vs Logistic Regression."
+        },
+        {
+          "rank": 4,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 0,
+          "text": "Data Analyst Case Study: A product dashboard shows a 10% drop in daily active users."
+        }
+      ]
+    },
+    {
+      "query_id": 4,
+      "query": "How do I optimize PyTorch model serving latency in production using quantization or ONNX?",
+      "target_role": "ML Engineer",
+      "category_filter": "All Categories",
+      "context_precision_query": 0.75,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "3. MLOps & Infrastructure: Discuss how to optimize PyTorch inference latency: weight quantization (FP32 to INT8), TensorRT/ONNX."
+        },
+        {
+          "rank": 2,
+          "source": "ml_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "KEY RESPONSIBILITIES: Optimize ML model inference for low latency and high throughput (quantization, ONNX compilation)."
+        },
+        {
+          "rank": 3,
+          "source": "ml_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "QUALIFICATIONS: Containerization (Docker), FastAPI serving, PyTorch, TensorFlow, MLOps concepts."
+        },
+        {
+          "rank": 4,
+          "source": "ai_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 0,
+          "text": "AI Engineer Responsibilities: Prompt engineering, multi-agent collaboration workflows (LangGraph)."
+        }
+      ]
+    },
+    {
+      "query_id": 5,
+      "query": "What vector databases and framework skills are expected for an AI Engineer role?",
+      "target_role": "AI Engineer",
+      "category_filter": "Job Description",
+      "context_precision_query": 0.75,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "ai_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "QUALIFICATIONS: Experience with vector databases and embedding models (OpenAI, Hugging Face, Cohere)."
+        },
+        {
+          "rank": 2,
+          "source": "ai_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "KEY RESPONSIBILITIES: RAG pipelines (LangChain, LlamaIndex), Vector databases (ChromaDB, Pinecone, Qdrant)."
+        },
+        {
+          "rank": 3,
+          "source": "ai_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "POSITION SUMMARY: Generative AI, LLMs, Retrieval-Augmented Generation (RAG), and agentic workflows."
+        },
+        {
+          "rank": 4,
+          "source": "ml_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 0,
+          "text": "ML Engineer Qualifications: Software engineering foundations, PyTorch, Docker, Kubernetes."
+        }
+      ]
+    },
+    {
+      "query_id": 6,
+      "query": "How should I frame project experience on my resume using the STAR method with metrics?",
+      "target_role": "ML Engineer",
+      "category_filter": "Resume/Tips",
+      "context_precision_query": 1.0,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 3. Writing Impactful Bullet Points (The STAR Method): Situation, Task, Action, Result with metrics."
+        },
+        {
+          "rank": 2,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "Formula: [Action Verb] + [What you did] + [Why/Result achieved with metrics]."
+        },
+        {
+          "rank": 3,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 4. ATS Optimization: Keyword matching from Job Description."
+        },
+        {
+          "rank": 4,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 1. Resume Formatting Guidelines: 1 page, single column layout."
+        }
+      ]
+    },
+    {
+      "query_id": 7,
+      "query": "What statistics, hypothesis testing, and probability concepts are tested in interviews?",
+      "target_role": "Data Scientist",
+      "category_filter": "Interview Prep/Experience",
+      "context_precision_query": 0.75,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Stats questions: Explain difference between Type I and Type II errors, Central Limit Theorem."
+        },
+        {
+          "rank": 2,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Experimental Design & A/B Testing: Hypothesis H0/H1, power analysis, alpha=0.05, power=0.8."
+        },
+        {
+          "rank": 3,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Data Analyst Quiz: 20 multiple choice questions on SQL queries and basic probability."
+        },
+        {
+          "rank": 4,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 0,
+          "text": "AI Engineer Round: Cosine Similarity vs Dot Product."
+        }
+      ]
+    },
+    {
+      "query_id": 8,
+      "query": "What are the core responsibilities and MLOps tools required for a Machine Learning Engineer?",
+      "target_role": "ML Engineer",
+      "category_filter": "Job Description",
+      "context_precision_query": 0.75,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "ml_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "KEY RESPONSIBILITIES: Airflow, Kubeflow, Docker, Kubernetes, FastAPI, Prometheus, Grafana, MLflow."
+        },
+        {
+          "rank": 2,
+          "source": "ml_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "POSITION SUMMARY: Scale ML pipelines, package models into microservices, MLOps, latency."
+        },
+        {
+          "rank": 3,
+          "source": "ml_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "QUALIFICATIONS: Git, CI/CD pipelines (GitHub Actions), MLOps concepts (model registry, feature store)."
+        },
+        {
+          "rank": 4,
+          "source": "ai_engineer_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 0,
+          "text": "AI Engineer Responsibilities: LangChain, LlamaIndex, Ragas, TruLens evaluators."
+        }
+      ]
+    },
+    {
+      "query_id": 9,
+      "query": "How do I design a real-time e-commerce recommendation system with candidate generation and ranking?",
+      "target_role": "ML Engineer",
+      "category_filter": "Interview Prep/Experience",
+      "context_precision_query": 0.75,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "ML System Design: Real-time recommendation system (Candidate Generation HNSW + Ranking CTR model)."
+        },
+        {
+          "rank": 2,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "A/B Testing Round: Test new recommendation algorithm for home page."
+        },
+        {
+          "rank": 3,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Production challenges: Feature store for low-latency feature fetching, caching of user embeddings."
+        },
+        {
+          "rank": 4,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 0,
+          "text": "AI Engineer RAG Architecture: Vector DB indexing, Cohere reranker."
+        }
+      ]
+    },
+    {
+      "query_id": 10,
+      "query": "What is the recommended page length, structure, and font for a tech resume?",
+      "target_role": "Data Analyst",
+      "category_filter": "Resume/Tips",
+      "context_precision_query": 1.0,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 1. Formatting: 1 page length, single column layout, Arial/Calibri 10-12pt font."
+        },
+        {
+          "rank": 2,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 2. Structure: 1. Header 2. Education 3. Skills 4. Experience 5. Projects."
+        },
+        {
+          "rank": 3,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 4. ATS Optimization: Keyword matching, avoid text in images."
+        },
+        {
+          "rank": 4,
+          "source": "resume_tips_general.txt",
+          "category": "Resume/Tips",
+          "manual_relevance": 1,
+          "text": "## 3. STAR Method bullet points for project section."
+        }
+      ]
+    },
+    {
+      "query_id": 11,
+      "query": "When should an engineer use Fine-Tuning versus RAG for enterprise LLM systems?",
+      "target_role": "AI Engineer",
+      "category_filter": "Interview Prep/Experience",
+      "context_precision_query": 0.75,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Fine-Tuning vs RAG: Fine-Tuning is for style/tone/terminology; RAG is for dynamic factual knowledge."
+        },
+        {
+          "rank": 2,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "Generative AI Concepts: RAG pipeline, dense retrieval, Cosine similarity vs Dot Product."
+        },
+        {
+          "rank": 3,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 1,
+          "text": "LLM Evaluation Discussion: Chatbot evaluation, golden test sets, LLM-as-a-judge."
+        },
+        {
+          "rank": 4,
+          "source": "data_roles_experience.txt",
+          "category": "Interview Prep/Experience",
+          "manual_relevance": 0,
+          "text": "MLOps Coding: Dockerfile for PyTorch FastAPI service."
+        }
+      ]
+    },
+    {
+      "query_id": 12,
+      "query": "What dashboard tools (Tableau, Power BI) and metrics analysis are needed for Data Analysts?",
+      "target_role": "Data Analyst",
+      "category_filter": "Job Description",
+      "context_precision_query": 1.0,
+      "retrieved_chunks": [
+        {
+          "rank": 1,
+          "source": "data_analyst_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "QUALIFICATIONS: Experience building dashboards in Power BI or Tableau, Excel pivot tables."
+        },
+        {
+          "rank": 2,
+          "source": "data_analyst_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "KEY RESPONSIBILITIES: Build & maintain interactive BI dashboards using Tableau, Power BI, Looker."
+        },
+        {
+          "rank": 3,
+          "source": "data_analyst_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "POSITION SUMMARY: Business Intelligence team, interactive dashboards, SQL queries, KPIs."
+        },
+        {
+          "rank": 4,
+          "source": "data_analyst_jd.txt",
+          "category": "Job Description",
+          "manual_relevance": 1,
+          "text": "Perform exploratory data analysis (EDA) to identify trends, patterns, and anomalies."
+        }
+      ]
+    }
+  ]
+}
